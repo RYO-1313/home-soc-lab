@@ -259,6 +259,13 @@ Both must be present before moving on.
 
 <br>
 
+## Roadmap
+
+- [ ] [Wazuh → Splunk Integration](docs/01-splunk-wazuh-integration.md)
+- [ ] [Wazuh Agent Setup](docs/02-wazuh-agent-setup.md)
+- [ ] [Splunk Dashboards](docs/03-splunk-dashboards.md)
+
+<br>
 ---
 
 > Last updated: May 2026 &nbsp;·&nbsp; Links reviewed every 2 months
