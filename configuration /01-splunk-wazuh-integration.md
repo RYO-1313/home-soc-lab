@@ -110,12 +110,7 @@ This is where Splunk will store all Wazuh alerts.
 1. Go to **Settings** (top menu bar)
 2. Click **Indexes**
 3. Click **New Index** (top right)
-4. Fill in the following:
-
-| Field | Value |
-|-------|-------|
-| Index Name | `wazuh-alerts` |
-| Everything else | Leave as default |
+4. Set the **Index Name** to `wazuh-alerts` and leave everything else as default.
 
 5. Click **Save**
 
@@ -261,7 +256,10 @@ To confirm alerts are arriving in Splunk, open the Splunk web interface and run 
 index=wazuh-alerts
 ```
 
-You should start seeing Wazuh alerts appear within a minute or two.
+You should start seeing Wazuh alerts appear within a minute or two like this in photo.
+
+<img width="1904" height="894" alt="Screenshot From 2026-05-05 08-05-02" src="https://github.com/user-attachments/assets/c27de806-54ad-4393-a57d-b66e53f4ad72" />
+
 
 <br>
 
