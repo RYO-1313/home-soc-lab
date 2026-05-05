@@ -261,7 +261,7 @@ Both must be present before moving on.
 
 ## Roadmap
 
-- [ ] [Wazuh → Splunk Integration](docs/01-splunk-wazuh-integration.md)
+- [ ] [Wazuh → Splunk Integration](configuration/01-splunk-wazuh-integration.md)
 - [ ] [Wazuh Agent Setup](docs/02-wazuh-agent-setup.md)
 - [ ] [Splunk Dashboards](docs/03-splunk-dashboards.md)
 
