@@ -2,7 +2,7 @@
 
 ![Debian](https://img.shields.io/badge/Debian-13.4.0-A81D33?style=flat-square&logo=debian&logoColor=white)
 ![Splunk](https://img.shields.io/badge/Splunk-10.2.3-000000?style=flat-square&logo=splunk&logoColor=white)
-![Wazuh](https://img.shields.io/badge/Wazuh-4.x-3CAAD9?style=flat-square)
+![Wazuh](https://img.shields.io/badge/Wazuh-4.14-3CAAD9?style=flat-square)
 ![Maintained](https://img.shields.io/badge/Maintained-Every%202%20Months-green?style=flat-square)
 ![Security](https://img.shields.io/badge/Category-Security%20Lab-orange?style=flat-square)
 
