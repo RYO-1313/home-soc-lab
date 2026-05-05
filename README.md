@@ -1,5 +1,12 @@
 # SIEM-EDR Lab
 
+![Debian](https://img.shields.io/badge/Debian-13.4.0-A81D33?style=flat-square&logo=debian&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-10.2.3-000000?style=flat-square&logo=splunk&logoColor=white)
+![Wazuh](https://img.shields.io/badge/Wazuh-4.x-3CAAD9?style=flat-square)
+![Maintained](https://img.shields.io/badge/Maintained-Every%202%20Months-green?style=flat-square)
+![Security](https://img.shields.io/badge/Category-Security%20Lab-orange?style=flat-square)
+
+
 A step-by-step guide to building a personal security lab with **Splunk** as a SIEM and **Wazuh** as an EDR, running on a single Debian 13 machine. Written to be clear whether you are new to Linux or already comfortable in the terminal.
 
 > **Note:** All download links in this repository are reviewed and updated every **2 months**.
