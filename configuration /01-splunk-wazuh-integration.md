@@ -36,6 +36,20 @@ Make sure both services are up before touching anything else.
 
 <br>
 
+#### Confirm Splunk is running
+
+```bash
+sudo /opt/splunk/bin/splunk status --run-as-root
+```
+
+Look for `splunkd is running` in the output. If it is not running, start it first:
+
+```bash
+sudo /opt/splunk/bin/splunk start --run-as-root
+```
+
+<br>
+
 #### Confirm Wazuh Manager is running
 
 ```bash
