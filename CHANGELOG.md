@@ -11,13 +11,13 @@
 ## [1.1.0] - 2026-05-05
 
 ### Added
- -CHANGELOG.md
+ - CHANGELOG.md
 
  ## [1.2.1] - 2026-05-06
 
  ### Added
- -wazuh-agent-setup.md
+ - wazuh-agent-setup.md
 
  ### fixed
- -splunk auto run 
+ - splunk auto run 
  
