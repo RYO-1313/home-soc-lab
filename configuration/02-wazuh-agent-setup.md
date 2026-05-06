@@ -116,7 +116,7 @@ If your Windows machine appears as `Active`, the agent is connected and sending 
 Open the Splunk web interface and run this search, replacing `DESKTOP-OGUH4L2` with your Windows machine's hostname:
 
 ```
-index="wazuh-alerts" agent.name="DESKTOP-OGUH4L2"
+index="wazuh-alerts" agent.name="Your agent name"
 ```
 
 If no results come back, the Windows agent may not have generated any alerts yet. Force some activity by opening **CMD as Administrator** on your Windows machine and running:
@@ -129,7 +129,7 @@ net user testuser /delete
 Wait 1-2 minutes, then search again with the time range set to **Last 15 minutes**:
 
 ```
-index="wazuh-alerts" agent.name="DESKTOP-OGUH4L2"
+index="wazuh-alerts" agent.name="Your agent name"
 ```
 
 <br>
