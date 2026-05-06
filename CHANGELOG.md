@@ -17,7 +17,8 @@
 
  ### Added
  - wazuh-agent-setup.md
+ -Universal Forwarder auto boot
 
  ### fixed
- - splunk auto run 
+ - splunk auto boot
  
