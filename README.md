@@ -1,5 +1,11 @@
 # SIEM-EDR Lab
 
+![Debian](https://img.shields.io/badge/Debian-13.4.0-A81D33?style=flat-square&logo=debian&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-10.2.3-000000?style=flat-square&logo=splunk&logoColor=white)
+![Wazuh](https://img.shields.io/badge/Wazuh-4.14-3CAAD9?style=flat-square)
+![Maintained](https://img.shields.io/badge/Maintained-Every%202%20Months-green?style=flat-square)
+![Security](https://img.shields.io/badge/Category-Security%20Lab-orange?style=flat-square)
+
 A step-by-step guide to building a personal security lab with **Splunk** as a SIEM and **Wazuh** as an EDR, running on a single Debian 13 machine. Written to be clear whether you are new to Linux or already comfortable in the terminal.
 
 > **Note:** All download links in this repository are reviewed and updated every **2 months**.
@@ -123,10 +129,7 @@ sudo /opt/splunk/bin/splunk start --accept-license --run-as-root
 On first launch, Splunk will ask you to create an **admin username** and **password**.
 Write them down — you will need them to access the web interface.
 
-| Flag | What it does |
-|------|-------------|
-| `--accept-license` | Skips the interactive license prompt |
-| `--run-as-root` | Required when running as root. Produces a deprecation warning — safe to ignore in a lab. |
+`--accept-license` skips the interactive license prompt and `--run-as-root` is required when running as root. It will produce a deprecation warning which is safe to ignore in a lab environment.
 
 <br>
 
@@ -149,20 +152,6 @@ Expected output:
 
 ```
 splunkd is running (PID: XXXXX)
-```
-
-Now do the same for the Splunk Universal Forwarder:
-
-```bash
-sudo /opt/splunkforwarder/bin/splunk enable boot-start --run-as-root
-sudo /opt/splunkforwarder/bin/splunk start
-sudo reboot
-```
-
-After the reboot, confirm the forwarder is also running:
-
-```bash
-sudo /opt/splunkforwarder/bin/splunk status
 ```
 
 <br>
@@ -262,6 +251,16 @@ Active: active (running)
 | `active (running)` | Wazuh is running right now |
 
 Both must be present before moving on.
+
+<br>
+
+---
+
+## Roadmap
+
+- [ ] [Wazuh → Splunk Integration](configuration/01-splunk-wazuh-integration.md)
+- [ ] [Wazuh Agent Setup](configuration/02-wazuh-agent-setup.md)
+- [ ] [Splunk Dashboards](configuration/03-splunk-dashboards.md)
 
 <br>
 
