@@ -1,3 +1,4 @@
+<img width="1919" height="860" alt="Screenshot From 2026-05-06 21-49-23" src="https://github.com/user-attachments/assets/b9f34a6e-5ddd-4cbb-adc1-3de9289a394b" />
 # Wazuh Agent Setup — Windows
 
 This guide installs the Wazuh agent on a Windows machine and connects it to your Wazuh Manager running on the Debian VM. Once connected, Wazuh will monitor your Windows machine and send its alerts to the manager.
