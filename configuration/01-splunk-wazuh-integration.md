@@ -1,3 +1,4 @@
+<img width="1904" height="894" alt="Screenshot From 2026-05-05 08-05-02" src="https://github.com/user-attachments/assets/74d0aac4-3bd8-440a-893e-3026ca09ea7c" />
 # Wazuh → Splunk Integration
 
 This guide connects Wazuh and Splunk so that every alert Wazuh generates is automatically shipped to Splunk for search and analysis. By the end, you will be able to query Wazuh alerts directly inside Splunk.
