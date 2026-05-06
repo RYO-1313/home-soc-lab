@@ -217,12 +217,20 @@ Without this file, Splunk treats each alert as a plain text string. With it, eve
 
 <br>
 
-### Step 8 — Restart the forwarder
+### Step 8 — Enable the forwarder on boot
 
-Apply all the configuration by restarting:
+Enable the forwarder to start automatically on every reboot:
 
 ```bash
-sudo /opt/splunkforwarder/bin/splunk restart
+sudo /opt/splunkforwarder/bin/splunk enable boot-start --run-as-root
+sudo /opt/splunkforwarder/bin/splunk start
+sudo reboot
+```
+
+After the machine comes back up, confirm the forwarder is running:
+
+```bash
+sudo /opt/splunkforwarder/bin/splunk status
 ```
 
 <br>
@@ -256,10 +264,7 @@ To confirm alerts are arriving in Splunk, open the Splunk web interface and run 
 index=wazuh-alerts
 ```
 
-You should start seeing Wazuh alerts appear within a minute or two like this in photo.
-
-<img width="1904" height="894" alt="Screenshot From 2026-05-05 08-05-02" src="https://github.com/user-attachments/assets/c27de806-54ad-4393-a57d-b66e53f4ad72" />
-
+You should start seeing Wazuh alerts appear within a minute or two.
 
 <br>
 
