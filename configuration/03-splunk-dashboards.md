@@ -9,7 +9,7 @@ This guide walks you through building a Wazuh security dashboard inside Splunk. 
 ## Import the Dashboard via XML
 
 If you want to skip the manual steps below, you can import the dashboard directly using the XML file included in this repository.
-- [ ] [Splunk Default Dashboards](configuration/wazuh-default-dashboard.xml)
+The XML file is available here: [wazuh-default-dashboard.xml](wazuh-default-dashboard.xml)
 
 # How to
 1. Go to **Dashboards** in Splunk
