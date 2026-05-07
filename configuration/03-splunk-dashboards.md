@@ -6,6 +6,26 @@ This guide walks you through building a Wazuh security dashboard inside Splunk. 
 
 ---
 
+## Import the Dashboard via XML
+
+If you want to skip the manual steps below, you can import the dashboard directly using the XML file included in this repository.
+
+1. Go to **Dashboards** in Splunk
+2. Click **Create New Dashboard**
+3. Give it a title
+4. Click **Classic Dashboard**
+5. Click **Create**
+6. Once inside, click **Edit → Source**
+7. Delete the existing XML
+8. Paste the XML from the file
+9. Click **Save**
+
+> **Before importing, make sure you have** Wazuh alerts flowing into a `wazuh-alerts` index. Otherwise the panels will show **No results** since there is no data.
+
+<br>
+
+---
+
 ## Step 1 — Create a new Dashboard
 
 1. Click **Dashboards** in the top menu
@@ -210,6 +230,11 @@ This is your action list. Every row is an alert that needs to be looked at. It s
 
 <br>
 
+<img width="1919" height="895" alt="Screenshot From 2026-05-07 11-49-17" src="https://github.com/user-attachments/assets/dc1bba76-ee38-4e30-b4dc-5adc028969c2" />
+<img width="1919" height="895" alt="Screenshot From 2026-05-07 11-49-07" src="https://github.com/user-attachments/assets/fbda6637-2472-4718-b70e-4b9776ab70cb" />
+
 ---
 
 > Last updated: May 2026 &nbsp;·&nbsp; Links reviewed every 2 months
+
+> **Note:** This is a default starter dashboard covering the most essential panels. More customized dashboards focused on specific use cases — such as brute force detection, privilege escalation tracking, and Windows event monitoring — will be added in the future.
