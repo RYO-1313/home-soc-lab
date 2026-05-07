@@ -16,9 +16,12 @@
  ## [1.2.1] - 2026-05-06
 
  ### Added
- - wazuh-agent-setup.md
+ - wazuh-agent-setup.md : [wazuh-agent-setup](configuration/02-wazuh-agent-setup.md)
  -Universal Forwarder auto boot
 
  ### fixed
  - splunk auto boot
  
+## [1.3.0] - 2026-05-07
+ - add splunk default dashboard [splunk-default dashboard](configuration/03-splunk-dashboards.md)
+ - 
