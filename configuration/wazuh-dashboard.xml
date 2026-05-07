@@ -1,0 +1,104 @@
+<dashboard version="1.1" theme="dark">
+  <label>Wazuh Security Overview</label>
+  <description>Real-time security alerts from Wazuh EDR</description>
+  <row>
+    <panel>
+      <single>
+        <title>Total Alerts</title>
+        <search>
+          <query>index="wazuh-alerts" | stats count as "Total Alerts"</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="height">103</option>
+        <option name="rangeColors">["0x53a051","0x0877a6","0xf8be34","0xf1813f","0xdc4e41"]</option>
+      </single>
+    </panel>
+    <panel>
+      <chart>
+        <title>Alerts by Agent</title>
+        <search>
+          <query>index="wazuh-alerts" | stats count by agent.name</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>Alerts Timeline</title>
+        <search>
+          <query>index="wazuh-alerts" | timechart span=1h count as "Alerts per Hour"</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>High Severity Alerts</title>
+        <search>
+          <query>index="wazuh-alerts" rule.level&gt;=7 | table timestamp agent.name rule.level rule.description full_log | sort -rule.level</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+      </table>
+    </panel>
+    <panel>
+      <chart>
+        <title>Top 10 Alert Types</title>
+        <search>
+          <query>index="wazuh-alerts" | stats count by rule.description | sort -count | head 10</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.chart">bar</option>
+        <option name="charting.chart.showDataLabels">all</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.drilldown">none</option>
+        <option name="charting.layout.splitSeries">1</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>MITRE ATT&amp;CK Techniques</title>
+        <search>
+          <query>index="wazuh-alerts" rule.mitre.technique!="" | stats count by rule.mitre.technique | sort -count | head 10</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>Alerts by Severity Level</title>
+        <search>
+          <query>index="wazuh-alerts" | stats count by rule.level | sort -rule.level</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+</dashboard>
