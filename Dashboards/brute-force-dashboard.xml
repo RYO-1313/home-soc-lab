@@ -1,0 +1,95 @@
+<dashboard version="1.1" theme="dark">
+  <label>Brute Force Attack Monitor</label>
+  <description>Real-time brute force detection and analysis</description>
+  <row>
+    <panel>
+      <single>
+        <title>Total Brute Force Attempts</title>
+        <search>
+          <query>index="wazuh-alerts" rule.description IN ("Multiple Windows Logon Failures", "Multiple authentication failures", "Windows audit failure event", "Logon Failure - Unknown user or bad password") | stats count as "Total Brute Force Attempts"</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <title>Successful Logins (Possible Compromise)</title>
+        <search>
+          <query>index="wazuh-alerts" rule.description IN ("Windows Logon Success","Successful sudo to ROOT executed.") | stats count as "Successful Logins"</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>Brute Force Timeline</title>
+        <search>
+          <query>index="wazuh-alerts" rule.description IN ("Multiple Windows Logon Failures", "Multiple authentication failures", "Windows audit failure event", "Logon Failure - Unknown user or bad password") | timechart span=5m count as "Attempts"</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>Targeted Machines</title>
+        <search>
+          <query>index="wazuh-alerts" rule.description IN ("Multiple Windows Logon Failures", "Multiple authentication failures", "Windows audit failure event", "Logon Failure - Unknown user or bad password") | stats count by agent.name</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+    <panel>
+      <chart>
+        <title>Brute Force by Attack Type</title>
+        <search>
+          <query>index="wazuh-alerts" rule.description IN ("Multiple Windows Logon Failures", "Multiple authentication failures", "Windows audit failure event", "Logon Failure - Unknown user or bad password") | stats count by rule.description | sort -count</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>Top Targeted Usernames</title>
+        <search>
+          <query>index="wazuh-alerts" rule.description IN ("Multiple Windows Logon Failures", "Multiple authentication failures", "Windows audit failure event", "Logon Failure - Unknown user or bad password") | stats count by data.win.eventdata.targetUserName | sort -count | head 10</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Brute Force Events Detail</title>
+        <search>
+          <query>index="wazuh-alerts" rule.description IN ("Multiple Windows Logon Failures", "Multiple authentication failures", "Windows audit failure event", "Logon Failure - Unknown user or bad password") | table timestamp agent.name rule.description rule.level full_log | sort -timestamp</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>
