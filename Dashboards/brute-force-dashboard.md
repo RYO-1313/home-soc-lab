@@ -249,8 +249,9 @@ Work through the panels in this order:
 7. **Panel 7** — Gather the evidence for the incident report.
 
 <br>
-<img width="1916" height="856" alt="Screenshot From 2026-05-10 06-39-16" src="https://github.com/user-attachments/assets/7c0bed94-a272-4964-ac3e-62e94ccb548c" />
 <img width="1916" height="856" alt="Screenshot From 2026-05-10 06-39-03" src="https://github.com/user-attachments/assets/42725e78-ef1c-436c-b60c-733478b23ebc" />
+
+<img width="1916" height="856" alt="Screenshot From 2026-05-10 06-39-16" src="https://github.com/user-attachments/assets/7c0bed94-a272-4964-ac3e-62e94ccb548c" />
 
 ---
 
