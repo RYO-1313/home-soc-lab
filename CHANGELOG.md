@@ -25,3 +25,7 @@
 ## [1.3.0] - 2026-05-07
  - add splunk default dashboard [splunk-default dashboard](configuration/03-splunk-dashboards.md)
  - 
+
+## [1.3.0] - 2026-05-10
+-add Dashboards folder
+-add Dashboards/brute-force-dashboard.md
