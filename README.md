@@ -258,9 +258,9 @@ Both must be present before moving on.
 
 ## Roadmap
 
-- [ ] [Wazuh → Splunk Integration](configuration/01-splunk-wazuh-integration.md)
-- [ ] [Wazuh Agent Setup](configuration/02-wazuh-agent-setup.md)
-- [ ] [Splunk Dashboards](configuration/03-splunk-dashboards.md)
+- [X] [Wazuh → Splunk Integration](configuration/01-splunk-wazuh-integration.md)
+- [X] [Wazuh Agent Setup](configuration/02-wazuh-agent-setup.md)
+- [X] [Splunk Dashboards](configuration/03-splunk-dashboards.md)
 
 <br>
 
