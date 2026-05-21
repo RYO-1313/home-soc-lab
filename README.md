@@ -63,7 +63,7 @@ This guide uses the Debian **13.4.0 netinstall** image for amd64.
 The netinstall image is ~800 MB and contains only the core installer — the rest of the system is pulled from the internet during setup, so you always get up-to-date packages.
 
 ```
-https://cdimage.debian.org/debian-cd/13.4.0/amd64/iso-cd/debian-13.4.0-amd64-netinst.iso
+https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.5.0-amd64-netinst.iso
 ```
 
 <br>
