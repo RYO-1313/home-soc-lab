@@ -131,7 +131,7 @@ The Universal Forwarder is a lightweight agent that reads Wazuh's alerts file an
 #### Install
 
 ```bash
-sudo dpkg -i splunkforwarder-10.2.3-4d61cf8a5c0c-linux-amd64.deb
+sudo dpkg -i splunkforwarder-10.4.0-f798d4d49089-linux-amd64.deb 
 ```
 
 <br>
