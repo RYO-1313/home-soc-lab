@@ -31,4 +31,7 @@
 -add Dashboards/brute-force-dashboard.md
 
 ## [1.3.2] - 2026-05-13
--add Wazuh agents Installation guide for Linux distros (
+-add Wazuh agents Installation guide for Linux distros 
+
+## [1.4.2] - 2026-05-21
+-update links
