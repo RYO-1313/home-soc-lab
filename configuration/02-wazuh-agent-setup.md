@@ -43,7 +43,7 @@ Open **CMD as Administrator** on your Windows machine and run the following step
 
 ### Step 1 — Download the Wazuh agent
 ```cmd
-curl -o wazuh-agent.msi https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.5-1.msi
+curl -o wazuh-agent.msi https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.0-1.msi
 ```
 <br>
 
