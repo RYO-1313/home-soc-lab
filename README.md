@@ -263,7 +263,7 @@ Both must be present before moving on.
 - [X] [Wazuh → Splunk Integration](configuration/01-splunk-wazuh-integration.md)
 - [X] [Wazuh Agent Setup](configuration/02-wazuh-agent-setup.md)
 - [X] [Splunk Dashboards](configuration/03-splunk-dashboards.md)
-- [X] [TheHive Setup](https://thehive-project.org)
+- [X] [TheHive Setup]([https://thehive-project.org](https://github.com/RYO-1313/home-soc-lab/blob/main/TheHive-Setup.md))
 
 <br>
 
