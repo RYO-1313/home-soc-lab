@@ -3,10 +3,11 @@
 ![Debian](https://img.shields.io/badge/Debian-13.4.0-A81D33?style=flat-square&logo=debian&logoColor=white)
 ![Splunk](https://img.shields.io/badge/Splunk-10.2.3-000000?style=flat-square&logo=splunk&logoColor=white)
 ![Wazuh](https://img.shields.io/badge/Wazuh-4.14-3CAAD9?style=flat-square)
+![TheHive](https://img.shields.io/badge/TheHive-Case%20Management-FEAE00?style=flat-square)
 ![Maintained](https://img.shields.io/badge/Maintained-Every%202%20Months-green?style=flat-square)
 ![Security](https://img.shields.io/badge/Category-Security%20Lab-orange?style=flat-square)
 
-A step-by-step guide to building a personal security lab with **Splunk** as a SIEM and **Wazuh** as an EDR, running on a single Debian 13 machine. Written to be clear whether you are new to Linux or already comfortable in the terminal.
+A step-by-step guide to building a personal security lab with **Splunk** as a SIEM, **Wazuh** as an EDR, and **TheHive** as a case management platform, running on a single Debian 13 machine. Written to be clear whether you are new to Linux or already comfortable in the terminal.
 
 > **Note:** All download links in this repository are reviewed and updated every **2 months**.
 
@@ -20,8 +21,9 @@ A step-by-step guide to building a personal security lab with **Splunk** as a SI
 |------|------|--------------|
 | **Splunk** | SIEM | Collects and indexes logs and alerts. Lets you search, investigate, and visualize your security data. |
 | **Wazuh** | EDR | Monitors the machine in real time. Detects threats, tracks file integrity, and sends alerts to Splunk. |
+| **TheHive** | Case Management | Tracks and manages security incidents. Turns Wazuh alerts into structured cases you can investigate and document. |
 
-Wazuh watches. Splunk reports. Together they give you a working security monitoring setup that reflects what you would find in a real SOC.
+Wazuh watches. Splunk reports. TheHive tracks. Together they give you a working security monitoring setup that reflects what you would find in a real SOC.
 
 <br>
 
@@ -261,6 +263,7 @@ Both must be present before moving on.
 - [X] [Wazuh → Splunk Integration](configuration/01-splunk-wazuh-integration.md)
 - [X] [Wazuh Agent Setup](configuration/02-wazuh-agent-setup.md)
 - [X] [Splunk Dashboards](configuration/03-splunk-dashboards.md)
+- [X] [TheHive Setup](https://thehive-project.org)
 
 <br>
 
