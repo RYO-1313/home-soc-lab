@@ -391,9 +391,3 @@ This setup demonstrates three things relevant to a L1 SOC role:
 
 ---
 
-## Repo Structure
-
-```
-
----
-
