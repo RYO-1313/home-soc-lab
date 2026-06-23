@@ -394,28 +394,6 @@ This setup demonstrates three things relevant to a L1 SOC role:
 ## Repo Structure
 
 ```
-thehive-setup/
-├── README.md
-├── docker-compose.yml
-├── integrations/
-│   └── custom-thehive          # Wazuh integration script
-├── config/
-│   └── ossec-integration.xml   # Config snippet for ossec.conf
-└── screenshots/
-    ├── thehive-alerts.png
-    ├── wazuh-alert-in-thehive.png
-    └── case-view.png
-```
 
 ---
 
-## Next Steps
-
-- [ ] Add Cortex for automated observable enrichment (VirusTotal, Shodan)
-- [ ] Connect Splunk as a second alert source
-- [ ] Build case templates for common Wazuh rule categories
-- [ ] Document a full triage walkthrough using a real alert
-
----
-
-> Part of the [SIEM-EDR Home Lab](../README.md) · Last updated: June 2026
